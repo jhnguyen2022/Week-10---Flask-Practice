@@ -1,0 +1,51 @@
+{% extends "header.html" %}
+
+{% block body %}
+
+
+
+<div class="tab-panel">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+    <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Data Exploration</a></li>
+    <li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Data Visualization</a></li>
+    <li role="presentation"><a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">Regression Analysis</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+    
+    <h2>Introduction</h2>
+
+    <p>This webapp is created by...</p>
+    
+    </div>
+    <div role="tabpanel" class="tab-pane" id="tab2">
+    <h2>Title 1 </h2>
+    <p>to do </p>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="tab3">
+    
+  <h2>Title 2 </h2>
+    <p>to do </p>
+    
+    </div>
+    <div role="tabpanel" class="tab-pane" id="tab4">
+    
+    <h2>Title 3 </h2>
+    <p>to do </p>
+
+    
+    
+    </div>
+  </div>
+
+</div>
+
+
+
+
+{% endblock %}

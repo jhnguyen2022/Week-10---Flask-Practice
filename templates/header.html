@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Web App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link  href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet"  >
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<header>
+	<div class="navbar-header">
+      <!--<a class="navbar-brand" href="/">-->
+	  <img style="max-width:120px; margin-top: -7px;" src="{{ url_for('static', filename='images/mainlogo.png') }}">
+	  <!-- </a>-->
+    </div>
+	
+
+</header>
+
+<body>
+<h1> Applied Data Science Fall 2021</h1>
+<div class="border-row" style = "width: 100%; margin:25px"></div>
+<div class="container" align = "center" style = "min-height:100%; margin-top:35px">
+{% block body%} {% endblock%}
+
+</div>
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <!-- <script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Web App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet"  >
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<header>
+	<div class="navbar-header">
+      <!--<a class="navbar-brand" href="/">-->
+	  <img style="max-width:120px; margin-top: -7px;" src="{{ url_for('static', filename='images/mainlogo.png') }}">
+	  <!--</a>-->
+    </div>
+
+</header>
+<body>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</body>
+</html>
